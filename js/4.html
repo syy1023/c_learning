@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html><body>
+<meta charset="utf-8"> 
+
+<script src="D:\files\js\jquery.js">
+</script>
+
+<script>
+$(document).ready(function(){
+  $("#test1").click(function(){
+    $("p").hide();
+  });
+  $("#test2").dblclick(function(){
+    $("p").show();
+  });
+});
+</script>
+
+<p>this is the paragraph</p>
+<button id="test1">双击鼠标左键的，我就消失。</button>
+<button id="test2">双击鼠标左键的，我就出现。</button>
+
+</body>
+</html>

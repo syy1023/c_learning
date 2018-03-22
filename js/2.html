@@ -1,0 +1,26 @@
+<html>
+<head>
+<!--hide()函数，要先加载js文件-->
+<script type="text/javascript" src="D:\files\js\jquery.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+$("button").click(function(){
+/*--隐藏p元素，以及id为test_id_hide的元素,类名为test的元素
+其它表达如$("*")所有元素;$("this")当前页面元素;$("p.first")第一个p元素;$(":button")所有
+type为button的input元素和button元素*/
+$("p").hide();
+$("#test").hide();
+});
+});
+</script>
+</head>
+
+<body>
+<h2>This is a heading</h2>
+<p>once click the button this paragraph will disappear</p>
+<p>once click the button this paragraph will disappear either.</p>
+<p id="test_id_hide">id of test_id_hide will hide</p>
+<p class="test">name of test called class will hide</p>
+<button type="button">Click me</button>
+</body>
+</html> 
